@@ -9,6 +9,7 @@ from .views import (
     AssessmentViewSet,
     QuestionViewSet,
     StudentProgressView,
+    QuizSubmitView,
 )
 
 router = DefaultRouter()
@@ -21,8 +22,11 @@ app_name = 'learning'
 
 urlpatterns = [
     path('', include(router.urls)),
-    
+
     # Student progress
     path('progress/', StudentProgressView.as_view(), name='student-progress'),
     path('progress/<uuid:course_id>/', StudentProgressView.as_view(), name='student-progress-course'),
+
+    # Quiz submission
+    path('quiz/submit/', QuizSubmitView.as_view(), name='quiz-submit'),
 ]
