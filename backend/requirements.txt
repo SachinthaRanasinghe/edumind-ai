@@ -1,0 +1,51 @@
+# Django Core
+Django==5.0.1
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+python-decouple==3.8
+
+# Database
+psycopg2-binary==2.9.9
+dj-database-url==2.1.0
+
+# Authentication
+djangorestframework-simplejwt==5.3.1
+django-allauth==0.57.0
+
+# AI/ML
+groq==0.4.1
+openai==1.10.0
+scikit-learn==1.4.0
+pandas==2.2.0
+numpy==1.26.3
+
+# NLP
+transformers==4.37.2
+torch==2.1.2
+sentence-transformers==2.3.1
+
+# Data Processing
+python-dateutil==2.8.2
+pytz==2024.1
+
+# Utilities
+requests==2.31.0
+Pillow==10.2.0
+celery==5.3.6
+redis==5.0.1
+
+# Testing
+pytest==7.4.4
+pytest-django==4.7.0
+factory-boy==3.3.0
+faker==22.6.0
+
+# Development
+django-debug-toolbar==4.2.0
+ipython==8.20.0
+black==24.1.1
+flake8==7.0.0
+
+# Production
+gunicorn==21.2.0
+whitenoise==6.6.0
